@@ -1,0 +1,106 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  background-color: #f9f9f9;
+}
+
+.task-item span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.task-item button {
+  margin-left: 8px;
+}
+
+.task-item button:nth-child(2) {
+  background-color: #007bff;
+}
+
+.task-item button:nth-child(2):hover {
+  background-color: #0056b3;
+}
+
+.task-item button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.task-item button:nth-child(3):hover {
+  background-color: #c82333;
+}
